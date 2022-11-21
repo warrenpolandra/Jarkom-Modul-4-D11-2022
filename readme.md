@@ -10,7 +10,9 @@
 
 ![Topologi](https://cdn.discordapp.com/attachments/856609726225973278/1044251635586707588/image.png)
 
-## Penghitungan Jumlah Subnet
+## Cisco Packet Tracer - VLSM(Variable Length Subnet Masking)
+
+### Penghitungan Jumlah Subnet
 
 | No | Subnet | Jumlah IP | Netmask |
 | :---: | :---: | :---: | :---: |
@@ -32,4 +34,8 @@
 | 16 | A13 | 2 | /30 |
 | 17 | A14 | 2 | /30 |
 | 18 | A15 | 2 | /30 |
-| Total | 2168 | /20|  |
+| Total | 18 | 2168 | /20|
+
+### VLSM Tree
+
+![VLSM Tree](https://cdn.discordapp.com/attachments/856609726225973278/1044335226127663165/VLSM_Tree.drawio.png)
