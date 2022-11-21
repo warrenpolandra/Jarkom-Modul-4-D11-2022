@@ -38,4 +38,4 @@
 
 ### VLSM Tree
 
-![VLSM Tree](https://cdn.discordapp.com/attachments/856609726225973278/1044335226127663165/VLSM_Tree.drawio.png)
+![VLSM Tree](https://cdn.discordapp.com/attachments/856609726225973278/1044336173897744454/VLSM_Tree.drawio.png)
