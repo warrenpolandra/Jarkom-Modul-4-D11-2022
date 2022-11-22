@@ -12,6 +12,10 @@
 
 ## Cisco Packet Tracer - VLSM(Variable Length Subnet Masking)
 
+### Pengelompokan Subnet
+
+![Kelompok Subnet](https://cdn.discordapp.com/attachments/856609726225973278/1044298202754580540/image.png)
+
 ### Penghitungan Jumlah Subnet
 
 | No | Subnet | Jumlah IP | Netmask |
