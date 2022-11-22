@@ -248,3 +248,27 @@ Network 192.190.1.0
 Mask 255.255.255.0
 Next hop 192.190.0.22
 ```
+
+#### Subnet A10
+
+**The Resonance** menuju **The Instrument**
+
+```
+IP Address 192.190.0.17
+Subnet Mask 255.255.255.252
+```
+
+**The Instrument** menuju **The Resonance**
+
+```
+IP Address 192.190.0.18
+Subnet Mask 255.255.255.252
+```
+
+Static Route pada **The Instrument**
+
+```
+Network 0.0.0.0
+Mask 0.0.0.0
+Next hop 192.190.0.17
+```
