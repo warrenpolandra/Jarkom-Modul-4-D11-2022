@@ -563,5 +563,5 @@ Static Route pada **The Resonance**
 ```
 Network 192.190.10.0
 Mask 255.255.254.0
-Next hop 
+Next hop 192.190.0.30
 ```
