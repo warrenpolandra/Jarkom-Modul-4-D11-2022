@@ -272,3 +272,28 @@ Network 0.0.0.0
 Mask 0.0.0.0
 Next hop 192.190.0.17
 ```
+
+#### Subnet A11
+
+**The Instrument** menuju **Matt Cugat**
+
+```
+IP Address 192.190.0.129
+Subnet Mask 255.255.255.128
+```
+
+**Matt Cugat** menuju **The Instrument**
+
+```
+IP Address 192.190.0.130
+Subnet Mask 255.255.255.128
+Gateway 192.190.0.129
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.0.128
+Mask 255.255.255.128
+Next hop 192.190.0.18
+```
