@@ -159,3 +159,45 @@ Network 192.190.12.0
 Mask 255.255.252.0
 Next hop 192.190.0.22
 ```
+
+#### Subnet A4
+
+**The Minister** menuju **The Dauntless**
+
+```
+IP Address 192.190.0.5
+Subnet Mask 255.255.255.252
+```
+
+**The Dauntless** menuju **The Minister**
+
+```
+IP Address 192.190.0.6
+Subnet Mask 255.255.255.252
+```
+
+Static Route pada **The Dauntless**
+
+```
+Network 0.0.0.0
+Mask 0.0.0.0
+Next hop 192.190.0.5
+```
+
+Static Route pada **The Order**
+
+```
+Network 192.190.0.4
+Mask 255.255.255.252
+Next hop 192.190.0.2
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.0.4
+Mask 255.255.255.252
+Next hop 192.190.0.22
+```
+
+#### Subnet 
