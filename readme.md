@@ -442,3 +442,36 @@ Netwprk 192.190.0.56
 Mask 255.255.255.252
 Next hop 192.190.0.18
 ```
+
+#### Subnet A18
+
+**The Profound** menuju **Helga**
+
+```
+IP Address 192.190.8.129
+Subnet Mask 255.255.255.128
+```
+
+**Helga** menuju **The Profound**
+
+```
+IP Address 192.190.8.130
+Subnet Mask 255.255.255.128
+Gateway 192.190.8.129
+```
+
+Static Route pada **The Instrument**
+
+```
+Network 192.190.8.128
+Mask 255.255.255.128
+Next hop 192.190.0.58
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.8.128
+Mask 255.255.255.128
+Next hop 192.190.0.18
+```
