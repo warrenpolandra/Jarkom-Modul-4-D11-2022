@@ -410,3 +410,35 @@ Network 192.190.2.0
 Mask 255.255.254.0
 Next hop 192.190.0.18
 ```
+
+#### Subnet A15
+
+**The Instrument** menuju **The Profound**
+
+```
+IP Address 192.190.0.57
+Subnet Mask 255.255.255.252
+```
+
+**The Profound** menuju **The Instrument**
+
+```
+IP Address 192.190.0.58
+Subnet Mask 255.255.255.252
+```
+
+Static Route pada **The Profound**
+
+```
+Network 0.0.0.0
+Mask 0.0.0.0
+Next hop 192.190.0.57
+```
+
+Static Route pada **The Resonance**
+
+```
+Netwprk 192.190.0.56
+Mask 255.255.255.252
+Next hop 192.190.0.18
+```
