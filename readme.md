@@ -475,3 +475,36 @@ Network 192.190.8.128
 Mask 255.255.255.128
 Next hop 192.190.0.18
 ```
+
+#### Subnet A17
+
+**The Profound** menuju **Spendrow**
+
+```
+IP Address 192.190.8.1
+Subnet Mask 255.255.255.128
+```
+
+**Spendrow** menuju **The Profound**
+
+```
+IP Address 192.190.8.2
+Subnet Mask 255.255.255.128
+Gateway 192.190.8.1
+```
+
+Static Route pada **The Instrument**
+
+```
+Network 192.190.8.0
+Mask 255.255.255.128
+Next hop 192.190.0.58
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.8.0
+Mask 255.255.255.128
+Next hop 192.190.0.18
+```
