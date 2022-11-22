@@ -43,3 +43,119 @@
 ### VLSM Tree
 
 ![VLSM Tree](https://cdn.discordapp.com/attachments/856609726225973278/1044336173897744454/VLSM_Tree.drawio.png)
+
+### Routing
+
+#### Subnet A12
+
+**The Resonance** menuju **The Order**
+
+```
+IP Address 192.190.0.21
+Subnet Mask 255.255.255.252
+```
+
+**The Order** menuju **The Resonance**
+
+```
+IP Address 192.190.0.22
+Subnet Mask 255.255.255.252
+```
+
+Static Route pada **The Order**
+
+```
+Network 0.0.0.0
+Mask 0.0.0.0
+Next hop 192.190.0.21
+```
+
+#### Subnet A2
+
+**The Order** menuju **Ashaf**
+
+```
+IP Address 192.190.0.65
+Subnet Mask 255.255.255.192
+```
+
+**Ashaf** menuju **The Order**
+
+```
+IP Address 192.190.0.66
+Subnet Mask 255.255.255.192
+Gateway 192.190.0.65
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.0.64
+Mask 255.255.255.192
+Next hop 192.190.0.22
+```
+
+#### Subnet A3
+
+**The Order** menuju **The Minister**
+
+```
+IP Address 192.190.0.1
+Subnet Mask 255.255.255.252
+```
+
+**The Minister** menuju **The Order**
+
+```
+IP Address 192.190.0.2
+Subnet Mask 255.255.255.252
+```
+
+Static Route pada **The Minister**
+
+```
+Network 0.0.0.0
+Mask 0.0.0.0
+Next hop 192.190.0.1
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.0.0
+Mask 255.255.255.252
+Next hop 192.190.0.22
+```
+
+#### Subnet A1
+
+**The Minister** menuju **Guideau**
+
+```
+IP Address 192.190.12.1
+Subnet Mask 255.255.252.0
+```
+
+**Guideau** menuju **The Minister**
+
+```
+IP Address 192.190.12.2
+Subnet Mask 255.255.252.0
+Gateway 192.190.12.1
+```
+
+Static Route pada **The Order**
+
+```
+Network 192.190.12.0
+Mask 255.255.252.0
+Next hop 192.190.0.2
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.12.0
+Mask 255.255.252.0
+Next hop 192.190.0.22
+```
