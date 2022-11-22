@@ -297,3 +297,35 @@ Network 192.190.0.128
 Mask 255.255.255.128
 Next hop 192.190.0.18
 ```
+
+#### Subnet A9
+
+**The Instrument** menuju **The Firefist**
+
+```
+IP Address 192.190.0.13
+Subnet Mask 255.255.255.252
+```
+
+**The Firefist** menuju **The Instrument**
+
+```
+IP Address 192.190.0.14
+Subnet Mask 255.255.255.252
+```
+
+Static Route pada **The Firefist**
+
+```
+Network 0.0.0.0
+Mask 0.0.0.0
+Next hop 192.190.0.13
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.0.12
+Mask 255.255.255.252
+Next hop 192.190.0.18
+```
