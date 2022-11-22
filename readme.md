@@ -508,3 +508,60 @@ Network 192.190.8.0
 Mask 255.255.255.128
 Next hop 192.190.0.18
 ```
+
+#### Subnet A14
+
+**The Resonance** menuju **The Magical**
+
+```
+IP Address 192.190.0.29
+Subnet Mask 255.255.255.252
+```
+
+**The Magical** menuju **The Resonance**
+
+```
+IP Address 192.190.0.30
+Subnet Mask 255.255.255.252
+```
+
+Static Route pada **The Magical**
+
+```
+Network 0.0.0.0
+Mask 255.255.255.252
+Next hop 192.190.0.29
+```
+
+#### Subnet A16
+
+**The Magical** menuju **Coverkt** dan **Haines**
+
+```
+IP Address 192.190.10.1
+Subnet Mask 255.255.254.0
+```
+
+**Coverkt** menuju **The Magical**
+
+```
+IP Address 192.190.10.2
+Subnet Mask 255.255.254.0
+Gateway 192.190.10.1
+```
+
+**Haines** menuju **The Magical**
+
+```
+IP Address 192.190.10.3
+Subnet Mask 255.255.254.0
+Gateway 192.190.10.1
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.10.0
+Mask 255.255.254.0
+Next hop 
+```
