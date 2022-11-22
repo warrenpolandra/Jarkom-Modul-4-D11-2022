@@ -329,3 +329,51 @@ Network 192.190.0.12
 Mask 255.255.255.252
 Next hop 192.190.0.18
 ```
+
+#### Subnet A6
+
+**The Firefist** menuju **Keith** dan **The Queen**
+
+```
+IP Address 192.190.9.1
+Subnet Mask 255.255.255.0
+```
+
+**Keith** menuju **The Firefist**
+
+```
+IP Address 192.190.9.2
+Subnet Mask 255.255.255.0
+Gateway 192.190.9.1
+```
+
+**The Queen** menuju **The Firefist**
+
+```
+IP Address 192.190.9.3
+Subnet Mask 255.255.255.0
+```
+
+Static Route pada **The Queen**
+
+```
+Network 0.0.0.0
+Mask 0.0.0.0
+Next hop 192.190.9.1
+```
+
+Static Route pada **The Instrument**
+
+```
+Network 192.190.9.0
+Mask 255.255.255.0
+Next hop 192.190.0.14
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.9.0
+Mask 255.255.255.0
+Next hop 192.190.0.18
+```
