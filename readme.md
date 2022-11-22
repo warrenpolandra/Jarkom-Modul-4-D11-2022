@@ -200,4 +200,51 @@ Mask 255.255.255.252
 Next hop 192.190.0.22
 ```
 
-#### Subnet 
+#### Subnet A5
+
+**The Dauntless** menuju **Johan** dan **Phanora**
+
+```
+IP Address 192.190.1.1
+Subnet Mask 255.255.255.0
+```
+
+**Johan** menuju **The Dauntless**
+
+```
+IP Address 192.190.1.2
+Subnet Mask 255.255.255.0
+Gateway 192.190.1.1
+```
+
+**Phanora** menuju **The Dauntless**
+
+```
+IP Address 192.190.1.3
+Subnet Mask 255.255.255.0
+Gateway 192.190.1.1
+```
+
+Static Route pada **The Minister**
+
+```
+Network 192.190.1.0
+Mask 255.255.255.0
+Next hop 192.190.0.6
+```
+
+Static Route pada **The Order**
+
+```
+Network 192.190.1.0
+Mask 255.255.255.0
+Next hop 192.190.0.2
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.1.0
+Mask 255.255.255.0
+Next hop 192.190.0.22
+```
