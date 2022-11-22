@@ -377,3 +377,36 @@ Network 192.190.9.0
 Mask 255.255.255.0
 Next hop 192.190.0.18
 ```
+
+#### Subnet A8
+
+**The Firefist** menuju **Oakleave**
+
+```
+IP Address 192.190.2.1
+Subnet Mask 255.255.254.0
+```
+
+**Oakleave** menuju **The Firefist**
+
+```
+IP Address 192.190.2.2
+Subnet Mask 255.255.254.0
+Gateway 192.190.2.1
+```
+
+Static Route pada **The Instrument**
+
+```
+Network 192.190.2.0
+Mask 255.255.254.0
+Next hop 192.190.0.14
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.2.0
+Mask 255.255.254.0
+Next hop 192.190.0.18
+```
