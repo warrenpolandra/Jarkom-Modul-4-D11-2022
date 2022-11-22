@@ -378,6 +378,47 @@ Mask 255.255.255.0
 Next hop 192.190.0.18
 ```
 
+#### Subnet A7
+
+**The Queen** menuju **The Witch**
+
+```
+IP Address 192.190.0.9
+Subnet Mask 255.255.255.252
+```
+
+**The Witch** menuju **The Queen**
+
+```
+IP Address 192.190.0.10
+Subnet Mask 255.255.255.252
+Gateway 192.190.0.9
+```
+
+Static Route pada **The Firefist**
+
+```
+Network 192.190.0.8
+Mask 255.255.255.252
+Next hop 192.190.9.3
+```
+
+Static Route pada **The Instrument**
+
+```
+Network 192.190.0.8
+Mask 255.255.255.252
+Next hop 192.190.0.14
+```
+
+Static Route pada **The Resonance**
+
+```
+Network 192.190.0.8
+Mask 255.255.255.252
+Next hop 192.190.0.18
+```
+
 #### Subnet A8
 
 **The Firefist** menuju **Oakleave**
@@ -564,4 +605,21 @@ Static Route pada **The Resonance**
 Network 192.190.10.0
 Mask 255.255.254.0
 Next hop 192.190.0.30
+```
+
+#### Subnet A13
+
+**The Resonance** menuju **The Beast**
+
+```
+IP Address 192.190.0.25
+Subnet Mask 255.255.255.252
+```
+
+**The Beast** menuju **The Resonance**
+
+```
+IP Address 192.190.0.26
+Subnet Mask 255.255.255.252
+Gateway 192.190.0.25
 ```
