@@ -630,6 +630,10 @@ Subnet Mask 255.255.255.252
 Gateway 192.190.0.25
 ```
 
+### Testing
+
+https://user-images.githubusercontent.com/85095564/204049553-030d19e6-d657-45fe-9d25-4f0aa870fbc4.mp4
+
 ## Graphical Network Simulator 3 - Classless Inter-Domain Routing
 
 ### Pengelompokan Subnet
@@ -1185,3 +1189,9 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
 #### Ping **Matt Cugat(192.190.74.2)** dari **Helga**
 
 ![Ping Matt Cugat](https://cdn.discordapp.com/attachments/856609726225973278/1045784495015600158/image.png)
+
+## Kendala
+
+- Testing pada GNS3 belum dijelaskan di modul, jadi sempat kebingungan pada saat testing
+- Kebingungan cara pembagian IP pada pohon VLSM/CIDR, karena terlalu banyak angka yang harus dilihat
+- Salah input IP address pada subnet yang berbeda karena salah melihat
