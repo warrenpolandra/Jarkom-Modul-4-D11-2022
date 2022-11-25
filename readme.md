@@ -658,3 +658,26 @@ Subnet yang Digabungkan
 #### Langkah 2 - Subnet level B
 
 ![CIDR B](https://cdn.discordapp.com/attachments/856609726225973278/1045766180159356928/Subnet_CIDR_B.png)
+
+| Subnet Baru | Anggota 1 | Anggota 2 | Netmask |
+| :---: | :---: | :---: | :---: |
+| B1 | A5 (/24) | A4 (/30) | /23 |
+| B2 | A7 (/30) | A6 (/24) | /23 |
+| B3 | A14 (/30) | A16 (/23) | /22 |
+| B4 | A18 (/25) | A17 (/25) | /24 |
+
+#### Langkah 3 - Subnet level C
+
+![CIDR C](https://cdn.discordapp.com/attachments/856609726225973278/1045766176464175224/Subnet_CIDR_C.png)
+
+| Subnet Baru | Anggota 1 | Anggota 2 | Netmask |
+| :---: | :---: | :---: | :---: |
+| C1 | B1 (/23) | A1 (/22) | /21 |
+| C2 | B2 (/23) | A8 (/23) | /22 |
+| C3 | B3 (/22) | A13 (/30) | /21 |
+| C4 | B4 (/24) | A15 (/30) | /23 |
+
+#### Langkah 4 - Subnet level D
+
+![CIDR D](https://cdn.discordapp.com/attachments/856609726225973278/1045766176967499847/Subnet_CIDR_D.png)
+
