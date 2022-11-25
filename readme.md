@@ -681,3 +681,43 @@ Subnet yang Digabungkan
 
 ![CIDR D](https://cdn.discordapp.com/attachments/856609726225973278/1045766176967499847/Subnet_CIDR_D.png)
 
+| Subnet Baru | Anggota 1 | Anggota 2 | Netmask |
+| :---: | :---: | :---: | :---: |
+| D1 | C1 (/21) | A3 (/30) | /20 |
+| D2 | C2 (/22) | A9 (/30) | /21 |
+| D3 | C4 (/23) | A11 (/25) | /22 |
+
+#### Langkah 5 - Subnet level E
+
+![CIDR E](https://cdn.discordapp.com/attachments/856609726225973278/1045766177344978954/Subnet_CIDR_E.png)
+
+| Subnet Baru | Anggota 1 | Anggota 2 | Netmask |
+| :---: | :---: | :---: | :---: |
+| E1 | D1 (/20) | A2 (/26) | /19 |
+| E2 | D2 (/21) | D3 (/22) | /20 |
+
+#### Langkah 6 - Subnet level F
+
+![CIDR F](https://cdn.discordapp.com/attachments/856609726225973278/1045774056911294536/Subnet_CIDR_F.png)
+
+| Subnet Baru | Anggota 1 | Anggota 2 | Netmask |
+| :---: | :---: | :---: | :---: |
+| F1 | E1 (/19) | A12 (/30) | /18 |
+| F2 | E2 (/20) | A10 (/30) | /19 |
+
+#### Langkah 7 - Subnet level G
+
+![CIDR G](https://cdn.discordapp.com/attachments/856609726225973278/1045774057217466408/Subnet_CIDR_G.png)
+
+| Subnet Baru | Anggota 1 | Anggota 2 | Netmask |
+| :---: | :---: | :---: | :---: |
+| G1 | F2 (/19) | C3 (/21) | /18 |
+
+#### Langkah 8 - Subnet level H
+
+![CIDR H](https://cdn.discordapp.com/attachments/856609726225973278/1045774056466694324/Subnet_CIDR_H.png)
+
+| Subnet Baru | Anggota 1 | Anggota 2 | Netmask |
+| :---: | :---: | :---: | :---: |
+| H1 | F1 (/18) | G1 (/18) | /17 |
+
