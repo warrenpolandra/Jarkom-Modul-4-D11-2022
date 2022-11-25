@@ -721,3 +721,318 @@ Subnet yang Digabungkan
 | :---: | :---: | :---: | :---: |
 | H1 | F1 (/18) | G1 (/18) | /17 |
 
+### CIDR Tree
+
+![CIDR Tree](https://cdn.discordapp.com/attachments/856609726225973278/1045775454575001710/CIDR_Tree.png)
+
+### Network Configuration
+
+Setelah mendapatkan pembagian IP, dilakukan network configuration untuk setiap node yang ada
+
+#### The Resonance
+
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+    address 192.190.32.1
+    netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+    address 192.190.80.1
+    netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+    address 192.190.98.1
+    netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+    address 192.190.100.1
+    netmask 255.255.255.252
+```
+
+#### The Order
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.32.2
+    netmask 255.255.255.252
+    gateway 192.190.32.1
+
+auto eth1
+iface eth1 inet static
+    address 192.190.16.1
+    netmask 255.255.255.192
+
+auto eth2
+iface eth2 inet static
+    address 192.190.8.1
+    netmask 255.255.255.252
+```
+
+#### Ashaf (50 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.16.2
+    netmask 255.255.255.192
+    gateway 192.190.16.1
+```
+
+#### The Minister
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.8.2
+    netmask 255.255.255.252
+    gateway 192.190.8.1
+
+auto eth1
+iface eth1 inet static
+    address 192.190.4.1
+    netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+    address 192.190.1.1
+    netmask 255.255.255.252
+```
+
+#### Guideau (1000 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.4.2
+    netmask 255.255.255.0
+    gateway 192.190.4.1
+```
+
+#### The Dauntless
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.1.2
+    netmask 255.255.255.252
+    gateway  192.190.1.1
+
+auto eth1
+iface eth1 inet static
+    address 192.190.0.1
+    netmask 255.255.255.0
+```
+
+#### Johan (100 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.0.2
+    netmask 255.255.255.0
+    gateway 192.190.0.1
+```
+
+#### Phanora (150 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.0.3
+    netmask 255.255.255.0
+    gateway 192.190.0.1
+```
+
+#### The Instrument
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.80.2
+    netmask 255.255.255.252
+    gateway 192.190.80.1
+
+auto eth1
+iface eth1 inet static
+    address 192.190.74.1
+    netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+    address 192.190.68.1
+    netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+    address 192.190.73.1
+    netmask 255.255.255.252
+```
+
+#### Matt Cugat (120 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.74.2
+    netmask 255.255.255.128
+    gateway 192.190.74.1
+```
+
+#### The Firefist
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.68.2
+    netmask 255.255.255.252
+    gateway 192.190.68.1
+
+auto eth1
+iface eth1 inet static
+    address 192.190.64.1
+    netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+    address 192.190.66.1
+    netmask 255.255.254.0
+```
+
+#### Keith (210 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.64.2
+    netmask 255.255.255.0
+    gateway 192.190.64.1
+```
+
+#### The Queen
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.64.3
+    netmask 255.255.255.0
+    gateway 192.190.64.1
+
+auto eth1
+iface eth1 inet static
+    address 192.190.65.1
+    netmask 255.255.255.252
+```
+
+#### The Witch
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.65.2
+    netmask 255.255.255.252
+    gateway 192.190.65.1
+```
+
+#### Oakleave (500 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.66.2
+    netmask 255.255.254.0
+    gateway 192.190.66.1
+```
+
+#### The Profound
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.73.2
+    netmask 255.255.255.252
+    gateway 192.190.73.1
+
+auto eth1
+iface eth1 inet static
+    address 192.190.72.129
+    netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+    address 192.190.72.1
+    netmask 255.255.255.128
+```
+
+#### Helga (70 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.72.130
+    netmask 255.255.255.128
+    gateway 192.190.72.129
+```
+
+#### Spendrow (120 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.72.2
+    netmask 255.255.255.128
+    gateway 192.190.72.1
+```
+
+#### The Magical
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.98.2
+    netmask 255.255.255.252
+    gateway 192.190.98.1
+
+auto eth1
+iface eth1 inet static
+    address 192.190.96.1
+    netmask 255.255.254.0
+```
+
+#### Coverkt (200 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.96.2
+    netmask 255.255.254.0
+    gateway 192.190.96.1
+```
+
+#### Haines (70 host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.96.3
+    netmask 255.255.254.0
+    gateway 192.190.96.1
+```
+
+#### The Beast
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.190.100.2
+    netmask 255.255.255.252
+    gateway 192.190.100.1
+```
+
