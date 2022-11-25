@@ -6,6 +6,12 @@
 - 5025201029 - Beryl
 - 5025201233 - Warren Gerald Polandra
 
+## Pembagian Tugas:
+
+- Afira: Topologi, penghitungan subnet VLSM (33.33%)
+- Beryl: Membuat Tree VLSM, konfigurasi IP CPT (33.33%)
+- Warren: CIDR (33.33%)
+
 ## Topologi
 
 ![Topologi](https://cdn.discordapp.com/attachments/856609726225973278/1044251635586707588/image.png)
