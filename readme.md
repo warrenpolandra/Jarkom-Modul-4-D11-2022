@@ -623,3 +623,38 @@ IP Address 192.190.0.26
 Subnet Mask 255.255.255.252
 Gateway 192.190.0.25
 ```
+
+## Graphical Network Simulator 3 - Classless Inter-Domain Routing
+
+### Pengelompokan Subnet
+
+#### Langkah 1 - Subnet level A
+
+![CIDR A](https://cdn.discordapp.com/attachments/856609726225973278/1045766179714768957/Subnet_CIDR_A.png)
+
+Subnet yang Digabungkan
+
+| Subnet Baru | Anggota 1 | Anggota 2 | Netmask |
+| :---: | :---: | :---: | :---: |
+| A1 | Guideau | The Minister | /22 |
+| A2 | The Minister | The Dauntless | /26 |
+| A3 | The Minister | The Order | /30 |
+| A4 | The Minister | The Dauntless | /30 |
+| A5 | The Dauntless | Phanora, Johan | /24 |
+| A6 | Keith | The Firefist, The Queen | /24 |
+| A7 | The Witch | The Queen | /30 |
+| A8 | Oakleave | The Firefist | /23 |
+| A9 | The Instrument | The Firefist | /30 |
+| A10 | The Resonance | The Instrument | /30 |
+| A11 | The Instrument | Matt Cugat | /25 |
+| A12 | The Resonance | The Order | /30 |
+| A13 | The Resonance | The Beast | /30 |
+| A14 | The Resonance | The Magical | /30 |
+| A15 | The Instrument | The Profound | /30 |
+| A16 | The Magical | Corvekt, Haines | /23 |
+| A17 | The Profound | Spendrow | /25 |
+| A18 | The Profound | Helga | /25 |
+
+#### Langkah 2 - Subnet level B
+
+![CIDR B](https://cdn.discordapp.com/attachments/856609726225973278/1045766180159356928/Subnet_CIDR_B.png)
