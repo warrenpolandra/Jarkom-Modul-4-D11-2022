@@ -1152,3 +1152,30 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.98.1
 echo nameserver 192.168.122.1 > /etc/resolv.conf
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
 ```
+
+
+### Testing
+
+#### Ping google.com pada **Guideau**
+
+![Ping Google](https://cdn.discordapp.com/attachments/856609726225973278/1045782510359027814/image.png)
+
+#### Ping **Johan(192.190.0.2)** dari **Guideau**
+
+![Ping Johan](https://cdn.discordapp.com/attachments/856609726225973278/1045782851804729386/image.png)
+
+#### Ping **The Beast(192.190.100.2)** dari **Johan**
+
+![Ping The Beast](https://cdn.discordapp.com/attachments/856609726225973278/1045783225064243280/image.png)
+
+#### Ping **The Witch(192.190.65.2)** dari **The Beast**
+
+![Ping The Witch](https://cdn.discordapp.com/attachments/856609726225973278/1045783747984883866/image.png)
+
+#### Ping **Helga(192.190.72.130)** dari **The Witch**
+
+![Ping Helga](https://cdn.discordapp.com/attachments/856609726225973278/1045784150306738217/image.png)
+
+#### Ping **Matt Cugat(192.190.74.2)** dari **Helga**
+
+![Ping Matt Cugat](https://cdn.discordapp.com/attachments/856609726225973278/1045784495015600158/image.png)
