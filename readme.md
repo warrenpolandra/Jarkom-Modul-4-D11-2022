@@ -1036,3 +1036,119 @@ iface eth0 inet static
     gateway 192.190.100.1
 ```
 
+### Routing
+
+Setelah network configuration, dilakukan routing pada setiap router dan memasukkan nameserver pada setiap host dan router
+
+#### Untuk Semua Host dan Server
+
+```
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Resonance
+
+```
+route add -net 192.190.16.0 netmask 255.255.255.192 gw 192.190.32.2
+route add -net 192.190.8.0 netmask 255.255.255.252 gw 192.190.32.2
+route add -net 192.190.4.0 netmask 255.255.252.0 gw 192.190.32.2
+route add -net 192.190.1.0 netmask 255.255.255.252 gw 192.190.32.2
+route add -net 192.190.0.0 netmask 255.255.255.0 gw 192.190.32.2
+
+route add -net 192.190.74.0 netmask 255.255.255.128 gw 192.190.80.2
+route add -net 192.190.68.0 netmask 255.255.255.252 gw 192.190.80.2
+route add -net 192.190.64.0 netmask 255.255.255.0 gw 192.190.80.2
+route add -net 192.190.65.0 netmask 255.255.255.252 gw 192.190.80.2
+route add -net 192.190.66.0 netmask 255.255.254.0 gw 192.190.80.2
+route add -net 192.190.73.0 netmask 255.255.255.252 gw 192.190.80.2
+route add -net 192.190.72.128 netmask 255.255.255.128 gw 192.190.80.2
+route add -net 192.190.72.0 netmask 255.255.255.128 gw 192.190.80.2
+
+route add -net 192.190.96.0 netmask 255.255.254.0 gw 192.190.98.2
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Order
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.32.1
+route add -net 192.190.4.0 netmask 255.255.252.0 gw 192.190.8.2
+route add -net 192.190.0.0 netmask 255.255.255.0 gw 192.190.8.2
+route add -net 192.190.1.0 netmask 255.255.255.252 gw 192.190.8.2
+
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Minister
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.8.1
+route add -net 192.190.0.0 netmask 255.255.255.0 gw 192.190.1.2
+
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Dauntless
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.1.1
+
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Instrument
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.80.1
+
+route add -net 192.190.64.0 netmask 255.255.255.0 gw 192.190.68.2
+route add -net 192.190.65.0 netmask 255.255.255.252 gw 192.190.68.2
+route add -net 192.190.66.0 netmask 255.255.254.0 gw 192.190.68.2
+
+route add -net 192.190.72.128 netmask 255.255.255.128 gw 192.190.73.2
+route add -net 192.190.72.0 netmask 255.255.255.128 gw 192.190.73.2
+
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Firefist
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.68.1
+route add -net 192.190.65.0 netmask 255.255.255.252 gw 192.190.64.3
+
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Queen
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.64.1
+
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Profound
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.73.1
+
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
+
+#### The Magical
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.190.98.1
+
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.190.0.0/16
+```
